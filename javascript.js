@@ -27,5 +27,29 @@ for(let i = 0; i < 16; i++){
 
 
 // select button
+let button = document.querySelector("button");
 // add click event listener on button
-// fire function that prompts user to enter a number (max 100)
+button.addEventListener("click", () =>{
+    // fire function that prompts user to enter a number (max 100)
+    let gridNum = prompt("Enter number of squares per side: ");
+    // convert gridNum to a number
+    Number(gridNum);
+
+    // start for loop to create rows and squares
+    // based off of gridNum
+    for(let i = 0; i < gridNum; i++){
+        let row = document.createElement("div");
+
+        for(let j = 0; j < gridNum; j++){
+            let square = document.createElement("div");
+            square.classList.add("square");
+            square.addEventListener("mouseover", () =>{
+                square.style.backgroundColor = "black";
+            })
+
+            row.append(square);
+        }
+
+        container.append(row);
+    }
+})
