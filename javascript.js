@@ -34,29 +34,36 @@ button.addEventListener("click", () =>{
     let gridNum = prompt("Enter number of squares per side: ");
     // convert gridNum to a number
     Number(gridNum);
-    
-    // clear grid first
-    let parent = document.querySelector("div");
-    while(parent.firstChild){
-        parent.removeChild(parent.firstChild);
+
+    if(gridNum > 100){
+        alert("Please enter a number less than or equal to 100");
     }
-
-    // start for loop to create rows and squares
-    // based off of gridNum
-    for(let i = 0; i < gridNum; i++){
-        let row = document.createElement("div");
-        row.classList.add("row");
-
-        for(let j = 0; j < gridNum; j++){
-            let square = document.createElement("div");
-            square.classList.add("square");
-            square.addEventListener("mouseover", () =>{
-                square.style.backgroundColor = "black";
-            })
-
-            row.append(square);
+    
+    else{
+        // clear grid first
+        let parent = document.querySelector("div");
+        while(parent.firstChild){
+            parent.removeChild(parent.firstChild);
         }
 
-        container.append(row);
+        // start for loop to create rows and squares
+        // based off of gridNum
+        for(let i = 0; i < gridNum; i++){
+            let row = document.createElement("div");
+            row.classList.add("row");
+
+            for(let j = 0; j < gridNum; j++){
+                let square = document.createElement("div");
+                square.classList.add("square");
+                square.addEventListener("mouseover", () =>{
+                    square.style.backgroundColor = "black";
+                })
+
+                row.append(square);
+            }
+
+            container.append(row);
+        }
     }
+    
 })
