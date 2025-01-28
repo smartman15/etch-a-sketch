@@ -9,16 +9,16 @@ for(let i = 0; i < 16; i++){
 
     // create squares
     for(let j = 0; j < 16; j++){
-        let box = document.createElement("div");
-        box.classList.add("square");
+        let square = document.createElement("div");
+        square.classList.add("square");
 
         // add event listener for whenever mouse goes over square
-        box.addEventListener("mouseover", () =>{
-            box.style.backgroundColor = "black";
+        square.addEventListener("mouseover", () =>{
+            square.style.backgroundColor = "black";
         })
 
         //store squares into row
-        row.append(box);
+        row.append(square);
     }
     
     //store row into container
