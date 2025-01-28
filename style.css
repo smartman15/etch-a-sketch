@@ -12,8 +12,11 @@ body{
     flex-grow: 0;
     flex-shrink: 0;
     width: 960px;
-    flex-wrap: wrap;
     
+}
+
+.row{
+    display: flex;
 }
 
 .square{
