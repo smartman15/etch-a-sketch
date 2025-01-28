@@ -24,3 +24,8 @@ for(let i = 0; i < 16; i++){
     //store row into container
     container.append(row);
 }
+
+
+// select button
+// add click event listener on button
+// fire function that prompts user to enter a number (max 100)
