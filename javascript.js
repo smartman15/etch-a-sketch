@@ -1,4 +1,4 @@
-let container = document.querySelector("#container");
+let container = document.querySelector(".container");
 
 
 // create 16 container divs

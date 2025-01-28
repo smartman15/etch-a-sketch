@@ -1,17 +1,23 @@
-#container{
+body{
+    display:flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    justify-content: center;
+}
+
+.container{
     display:flex;
     flex-direction: row;
-    flex-grow: 1;
     justify-content: center;
-    align-items: center;
-    width: 525px;
+    flex-grow: 1;
+    width: 960px;
     flex-wrap: wrap;
     
 }
 
 .square{
     border: 1px solid black;
-    width:30px;
-    height:30px;
+    width:70px;
+    height:70px;
     /* background-color: rgb(3, 173, 246); */
 }
