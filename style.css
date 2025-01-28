@@ -9,7 +9,8 @@ body{
     display:flex;
     flex-direction: row;
     justify-content: center;
-    flex-grow: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
     width: 960px;
     flex-wrap: wrap;
     
@@ -17,7 +18,7 @@ body{
 
 .square{
     border: 1px solid black;
-    width:70px;
-    height:70px;
+    width:58px;
+    height:58px;
     /* background-color: rgb(3, 173, 246); */
 }
