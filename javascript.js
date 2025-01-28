@@ -45,6 +45,7 @@ button.addEventListener("click", () =>{
     // based off of gridNum
     for(let i = 0; i < gridNum; i++){
         let row = document.createElement("div");
+        row.classList.add("row");
 
         for(let j = 0; j < gridNum; j++){
             let square = document.createElement("div");
