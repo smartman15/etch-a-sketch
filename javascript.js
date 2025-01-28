@@ -34,6 +34,12 @@ button.addEventListener("click", () =>{
     let gridNum = prompt("Enter number of squares per side: ");
     // convert gridNum to a number
     Number(gridNum);
+    
+    // clear grid first
+    let parent = document.querySelector("div");
+    while(parent.firstChild){
+        parent.removeChild(parent.firstChild);
+    }
 
     // start for loop to create rows and squares
     // based off of gridNum
