@@ -59,6 +59,11 @@ button.addEventListener("click", () =>{
                     square.style.backgroundColor = "black";
                 })
 
+                // size per square based on grid size
+                let size = 960/gridNum - 2;
+                square.style.width = size + "px";
+                square.style.height = size + "px";
+
                 row.append(square);
             }
 
